@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Soporte tipo Manito",
+    "description": "Soporte para celular",
+    "category": "kawaii",
+    "image": "manito.png"
+  },
+  {
+    "name": "Auriculares HS330",
+    "description": "Auriculares color negro y blanco",
+    "category": "tech",
+    "image": "auriculares.png"
+  },
+  {
+    "name": "Spinner",
+    "description": "Spinner plastico varios colores",
+    "category": "kawaii",
+    "image": "spinner.png"
+  },
+  {
+    "name": "Mouse con Cable",
+    "description": "Mouse luminoso compatible con Windows,MAC, Linux.",
+    "category": "tech",
+    "image": "mouse.jpg"
+  },
+  {
+    "name": "Regleta USB",
+    "description": "Regleta USB 4 puertos",
+    "category": "tech",
+    "image": "regleta.jpg"
+  },
+  {
+    "name": "Cepillo Con Espejo",
+    "description": "Cepillo con espejo color rosado para niña.",
+    "category": "kawaii",
+    "image": "cepillo.jpg"
+  },
+  {
+    "name": "Papel Brillante A5",
+    "description": "Papel tamaño A5.",
+    "category": "kawaii",
+    "image": "papel_brillante.jpg"
+  },
+  {
+    "name": "Hojas A4",
+    "description": "Paquete 25 Hojas tamaño A4, cuadros y lineas.",
+    "category": "kawaii",
+    "image": "hojas.jpg"
+  },
+  {
+    "name": "Hojas de 4 lineas",
+    "description": "Paquete de 50 hojas tamaño A5.",
+    "category": "kawaii",
+    "image": "lineasycuadros_a5.jpg"
+  },
+  {
+    "name": "Cartulinas A4",
+    "description": "Cartulinas de colores, blancas, esmaltadas.",
+    "category": "kawaii",
+    "image": "cartulina.jpg"
+  },
+  {
+    "name": "Esferos BIC",
+    "description": "Esferos punta fina, colores negro, azul y rojo.",
+    "category": "kawaii",
+    "image": "Esferos.jpg"
+  },
+  {
+    "name": "Lápices HB",
+    "description": "Lápices HB",
+    "category": "kawaii",
+    "image": "lapices.jpg"
+  },
+  {
+    "name": "Cables USB",
+    "description": "Cables USB de tipo C, diferentes colores.",
+    "category": "tech",
+    "image": "cables_usb.jpg"
+  },
+  {
+    "name": "Audifonos",
+    "description": "Audifonos 3.5mm diferentes colores.",
+    "category": "tech",
+    "image": "audifonos.jpg"
+  }
+]

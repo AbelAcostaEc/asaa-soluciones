@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Dual - Tecnología & Bazar Kawaii</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Pantalla dividida inicial -->
+    <div class="split-screen" id="main-screen">
+        <!-- Sección Tecnología -->
+        <div class="split-section tech-section" id="tech-section">
+            <div class="section-content">
+                <h2 class="section-title">Tecnología</h2>
+                <p class="section-subtitle">Descubre los últimos gadgets y dispositivos tecnológicos</p>
+                <button class="btn-explore" onclick="showSection('tech')">Explorar</button>
+            </div>
+        </div>
+        
+        <!-- Sección Bazar Kawaii -->
+        <div class="split-section kawaii-section" id="kawaii-section">
+            <div class="section-content">
+                <h2 class="section-title">Bazar & Variedades Kawaii</h2>
+                <p class="section-subtitle">Encuentra los productos más adorables y únicos</p>
+                <button class="btn-explore" onclick="showSection('kawaii')">Explorar</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sección de productos de Tecnología -->
+    <section class="product-section tech-products" id="tech-products">
+        <button class="back-btn tech-back" onclick="showMainScreen()">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        
+        <a href="#" class="other-section-btn tech-other" onclick="showSection('kawaii'); return false;">
+            <i class="fas fa-star"></i> Ver Kawaii
+        </a>
+        
+        <div class="section-header">
+            <h2 class="tech-header">Productos de Tecnología</h2>
+            <p>Los mejores gadgets al mejor precio</p>
+        </div>
+        
+        <div class="products-grid"></div>
+    </section>
+    
+    <!-- Sección de productos Kawaii -->
+    <section class="product-section kawaii-products" id="kawaii-products">
+        <button class="back-btn kawaii-back" onclick="showMainScreen()">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        
+        <a href="#" class="other-section-btn kawaii-other" onclick="showSection('tech'); return false;">
+            <i class="fas fa-microchip"></i> Ver Tecnología
+        </a>
+        
+        <div class="section-header">
+            <h2 class="kawaii-header">Bazar & Variedades Kawaii</h2>
+            <p>Productos adorables para alegrar tu día</p>
+        </div>
+        
+        <div class="products-grid"></div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

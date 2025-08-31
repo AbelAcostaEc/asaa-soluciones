@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.split-screen {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .split-screen {
+    flex-direction: column;
+  }
+}
+
+.split-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  overflow: hidden;
+}
+.split-section:hover {
+  flex: 1.2;
+}
+.split-section:hover::before {
+  opacity: 1;
+}
+.split-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.split-section.tech-section {
+  background-color: #2c77f4;
+}
+.split-section.tech-section .btn-explore {
+  color: #2c77f4;
+}
+.split-section.kawaii-section {
+  background-color: #ff9cd7;
+}
+.split-section.kawaii-section .btn-explore {
+  color: #ff9cd7;
+}
+.split-section .section-content {
+  text-align: center;
+  z-index: 2;
+  color: #ffffff;
+  padding: 20px;
+}
+.split-section .section-content .section-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+  .split-section .section-content .section-title {
+    font-size: 2rem;
+  }
+}
+.split-section .section-content .section-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 80%;
+}
+@media (max-width: 768px) {
+  .split-section .section-content .section-subtitle {
+    font-size: 1rem;
+  }
+}
+.split-section .section-content .btn-explore {
+  padding: 12px 30px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.split-section .section-content .btn-explore:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-section {
+  display: none;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+.product-section.tech-products {
+  background-color: #f5f9ff;
+}
+.product-section.kawaii-products {
+  background-color: #fff5fb;
+}
+.product-section .section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.product-section .section-header.tech-header {
+  color: #2c77f4;
+}
+.product-section .section-header.kawaii-header {
+  color: #ff9cd7;
+}
+.product-section .back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+.product-section .back-btn.tech-back {
+  color: #2c77f4;
+}
+.product-section .back-btn.kawaii-back {
+  color: #ff9cd7;
+}
+.product-section .other-section-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid;
+  text-decoration: none;
+}
+.product-section .other-section-btn.tech-other {
+  color: #ff9cd7;
+  border-color: #ff9cd7;
+  background: white;
+}
+.product-section .other-section-btn.kawaii-other {
+  color: #2c77f4;
+  border-color: #2c77f4;
+  background: white;
+}
+.product-section .other-section-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.5s ease forwards;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.product-card.tech-product .product-image {
+  border-bottom: 3px solid #2c77f4;
+}
+.product-card.tech-product .product-name {
+  color: #1a56c7;
+}
+.product-card.tech-product .product-price {
+  color: #2c77f4;
+}
+.product-card.tech-product .whatsapp-btn {
+  background-color: #2c77f4;
+  color: white;
+}
+.product-card.tech-product .whatsapp-btn:hover {
+  background-color: #1a56c7;
+}
+.product-card.kawaii-product .product-image {
+  border-bottom: 3px solid #ff9cd7;
+}
+.product-card.kawaii-product .product-name {
+  color: #e57ebd;
+}
+.product-card.kawaii-product .product-price {
+  color: #ff9cd7;
+}
+.product-card.kawaii-product .whatsapp-btn {
+  background-color: #ff9cd7;
+  color: white;
+}
+.product-card.kawaii-product .whatsapp-btn:hover {
+  background-color: #e57ebd;
+}
+.product-card .product-image {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product-card .product-info {
+  padding: 20px;
+}
+.product-card .product-info .product-name {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.product-card .product-info .product-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.product-card .product-info .product-description {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+.product-card .product-info .whatsapp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.product-card .product-info .whatsapp-btn .whatsapp-icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.active-section {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+.hidden-section {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */

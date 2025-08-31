@@ -1,0 +1,330 @@
+// Variables
+$tech-color: #2c77f4;
+$kawaii-color: #ff9cd7;
+$tech-dark: #1a56c7;
+$kawaii-dark: #e57ebd;
+$text-light: #ffffff;
+$shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+// Pantalla dividida inicial
+.split-screen {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.split-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    flex: 1.2;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &.tech-section {
+    background-color: $tech-color;
+
+    .btn-explore {
+      color: $tech-color;
+    }
+  }
+
+  &.kawaii-section {
+    background-color: $kawaii-color;
+
+    .btn-explore {
+      color: $kawaii-color;
+    }
+  }
+
+  .section-content {
+    text-align: center;
+    z-index: 2;
+    color: $text-light;
+    padding: 20px;
+
+    .section-title {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      max-width: 80%;
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+
+    .btn-explore {
+      padding: 12px 30px;
+      background-color: $text-light;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: $shadow;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+// Secciones de productos
+.product-section {
+  display: none;
+  padding: 40px 20px;
+  min-height: 100vh;
+
+  &.tech-products {
+    background-color: #f5f9ff;
+  }
+
+  &.kawaii-products {
+    background-color: #fff5fb;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+
+    &.tech-header {
+      color: $tech-color;
+    }
+    &.kawaii-header {
+      color: $kawaii-color;
+    }
+  }
+
+  .back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+
+    &.tech-back {
+      color: $tech-color;
+    }
+    &.kawaii-back {
+      color: $kawaii-color;
+    }
+  }
+
+  .other-section-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid;
+    text-decoration: none;
+
+    &.tech-other {
+      color: $kawaii-color;
+      border-color: $kawaii-color;
+      background: white;
+    }
+
+    &.kawaii-other {
+      color: $tech-color;
+      border-color: $tech-color;
+      background: white;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: $shadow;
+    }
+  }
+}
+
+// Grid de productos
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: $shadow;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  animation: fadeIn 0.5s ease forwards;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  &.tech-product {
+    .product-image {
+      border-bottom: 3px solid $tech-color;
+    }
+    .product-name {
+      color: $tech-dark;
+    }
+    .product-price {
+      color: $tech-color;
+    }
+    .whatsapp-btn {
+      background-color: $tech-color;
+      color: white;
+
+      &:hover {
+        background-color: $tech-dark;
+      }
+    }
+  }
+
+  &.kawaii-product {
+    .product-image {
+      border-bottom: 3px solid $kawaii-color;
+    }
+    .product-name {
+      color: $kawaii-dark;
+    }
+    .product-price {
+      color: $kawaii-color;
+    }
+    .whatsapp-btn {
+      background-color: $kawaii-color;
+      color: white;
+
+      &:hover {
+        background-color: $kawaii-dark;
+      }
+    }
+  }
+
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .product-info {
+    padding: 20px;
+
+    .product-name {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .product-price {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .product-description {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    .whatsapp-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      .whatsapp-icon {
+        margin-right: 8px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+// Animaciones
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Transiciones de secciones
+.active-section {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+.hidden-section {
+  display: none;
+}
