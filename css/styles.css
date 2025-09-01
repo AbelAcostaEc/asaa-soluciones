@@ -137,10 +137,14 @@ body {
 .product-section .back-btn.kawaii-back {
   color: #ff9cd7;
 }
-.product-section .other-section-btn {
-  position: absolute;
+.product-section .other-section-container {
+  display: flex;
+  justify-content: end;
+  position: sticky;
   top: 20px;
-  right: 20px;
+  z-index: 10000;
+}
+.product-section .other-section-btn {
   padding: 8px 15px;
   border-radius: 20px;
   font-weight: 600;

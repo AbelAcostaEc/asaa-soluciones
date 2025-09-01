@@ -2,7 +2,7 @@
   {
     "name": "Soporte tipo Manito",
     "description": "Soporte para celular",
-    "category": "kawaii",
+    "category": "tech",
     "image": "manito.png"
   },
   {
@@ -27,7 +27,7 @@
     "name": "Mousepad",
     "description": "Mousepad varios diseños",
     "category": "tech",
-    "images": ["mouse__pad_gamer.webp", "mouse_pad.jpg"]
+    "images": ["mouse_pad_3.jpeg", "mouse__pad_gamer.webp", "mouse_pad.jpg"]
   },
   {
     "name": "Spinner",
@@ -150,8 +150,8 @@
     "image": "juego_geomitrico_capibara.png"
   },
   {
-    "name": "Lienzos para pintar",
-    "description": "Lienzos en blanco para pintar incliuda caja de colores.",
+    "name": "Piñata para pintar",
+    "description": "Piñata en blanco para pintar incliuda caja de colores.",
     "category": "kawaii",
     "images": ["lienzo_pinturas.png", "lienzo_2.jpg"]
   },
@@ -194,12 +194,12 @@
   {
     "name": "Limpiador de teclados",
     "description": "Gel Limpiador de teclados.",
-    "category": "kawaii",
+    "category": "tech",
     "image": "super_clean.jpg"
   },
   {
     "name": "Tablero con vincha",
-    "description": "Tablero con vincha A4.",
+    "description": "Tablero con vincha A4 varios diseños.",
     "category": "kawaii",
     "image": "tablero_vincha.jpg"
   },
@@ -208,5 +208,17 @@
     "description": "Tijera diseños de animalitos.",
     "category": "kawaii",
     "image": "tijera_animalito.png"
+  },
+  {
+    "name": "Esferos de minas",
+    "description": "Esferos de minas varios diseños.",
+    "category": "kawaii",
+    "image": "esferos_kawaii.jpg"
+  },
+  {
+    "name": "Lápices Capibara",
+    "description": "Lápices con diseños de capibara.",
+    "category": "kawaii",
+    "image": "lapices_capibara.jpg"
   }
 ]
