@@ -6,10 +6,28 @@
     "image": "manito.png"
   },
   {
+    "name": "Mochila Capibara",
+    "description": "Mochila con diseño de capibara.",
+    "category": "kawaii",
+    "image": "mochila_capibara.png"
+  },
+  {
+    "name": "Mochila Capibara",
+    "description": "Mochila con diseño de capibara de peluche.",
+    "category": "kawaii",
+    "image": "mochilas_capibara.webp"
+  },
+  {
     "name": "Auriculares HS330",
     "description": "Auriculares color negro y blanco",
     "category": "tech",
     "image": "auriculares.png"
+  },
+  {
+    "name": "Mousepad",
+    "description": "Mousepad varios diseños",
+    "category": "tech",
+    "images": ["mouse__pad_gamer.webp", "mouse_pad.jpg"]
   },
   {
     "name": "Spinner",
@@ -82,5 +100,113 @@
     "description": "Audifonos 3.5mm diferentes colores.",
     "category": "tech",
     "image": "audifonos.jpg"
+  },
+  {
+    "name": "Caja con tapa Oso",
+    "description": "Caja plastica con tapa en forma de oso, ideal para almacenar objetos.",
+    "category": "kawaii",
+    "image": "caja_con_tapa_oso.jpg"
+  },
+  {
+    "name": "Bolsos de lado Disney",
+    "description": "Bolsos de lado con diseños de Disney.",
+    "category": "kawaii",
+    "images": ["cartera_mickey.webp", "cartera_mickey_2.webp"]
+  },
+  {
+    "name": "Cartuchera Metálica",
+    "description": "Cartuchera metálica con diseño de carro.",
+    "category": "kawaii",
+    "image": "cartuchera_metalica.png"
+  },
+  {
+    "name": "Cartuchera Stich",
+    "description": "Cartuchera de peluche color azul con diseño de Stitch.",
+    "category": "kawaii",
+    "image": "cartuchera_stich.png"
+  },
+  {
+    "name": "Crema de manos",
+    "description": "Crema de manos hidratante de leche.",
+    "category": "kawaii",
+    "image": "crema_milk.avif"
+  },
+  {
+    "name": "Cuaderno Cosido",
+    "description": "Cuaderno cosido varios diseños.",
+    "category": "kawaii",
+    "image": "cuaderno_cosido.png"
+  },
+  {
+    "name": "Masa Moldeable",
+    "description": "Masa moldeable de colores.",
+    "category": "kawaii",
+    "image": "espu_magica.webp"
+  },
+  {
+    "name": "Juegos Geométricos",
+    "description": "Juegos geométricos capibara.",
+    "category": "kawaii",
+    "image": "juego_geomitrico_capibara.png"
+  },
+  {
+    "name": "Lienzos para pintar",
+    "description": "Lienzos en blanco para pintar incliuda caja de colores.",
+    "category": "kawaii",
+    "images": ["lienzo_pinturas.png", "lienzo_2.jpg"]
+  },
+  {
+    "name": "Cartera pequeña",
+    "description": "Cartera pequeña con diseño de squid games.",
+    "category": "kawaii",
+    "image": "llavero_squid_game.png"
+  },
+  {
+    "name": "Loncheras Térmicas",
+    "description": "Loncheras térmicas varios diseños.",
+    "category": "kawaii",
+    "image": "loncheras_termicas.webp"
+  },
+  {
+    "name": "Cosmetiquera",
+    "description": "Cosmetiquera.",
+    "category": "kawaii",
+    "image": "mimi_bag.jpg"
+  },
+  {
+    "name": "Mini Ventilador",
+    "description": "Mini ventilador portátil diseño de animalitos.",
+    "category": "kawaii",
+    "image": "mini_ventildaro.avif"
+  },
+  {
+    "name": "Patito para moto",
+    "description": "Patito para moto decorativo.",
+    "category": "kawaii",
+    "image": "patito_moto.webp"
+  },
+  {
+    "name": "Resaltadores",
+    "description": "Resaltadores de colores varios.",
+    "category": "kawaii",
+    "image": "resaltadores.webp"
+  },
+  {
+    "name": "Limpiador de teclados",
+    "description": "Gel Limpiador de teclados.",
+    "category": "kawaii",
+    "image": "super_clean.jpg"
+  },
+  {
+    "name": "Tablero con vincha",
+    "description": "Tablero con vincha A4.",
+    "category": "kawaii",
+    "image": "tablero_vincha.jpg"
+  },
+  {
+    "name": "Tijera de animalitos",
+    "description": "Tijera diseños de animalitos.",
+    "category": "kawaii",
+    "image": "tijera_animalito.png"
   }
 ]

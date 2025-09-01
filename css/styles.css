@@ -223,7 +223,7 @@ body {
 }
 .product-card .product-image {
   width: 100%;
-  height: 200px;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -259,6 +259,46 @@ body {
 .product-card .product-info .whatsapp-btn .whatsapp-icon {
   margin-right: 8px;
   font-size: 1.2rem;
+}
+
+.product-images-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.product-images-container .product-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.product-images-container .product-image.active {
+  opacity: 1;
+}
+.product-images-container .prev-btn,
+.product-images-container .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 2;
+}
+.product-images-container .prev-btn {
+  left: 10px;
+}
+.product-images-container .next-btn {
+  right: 10px;
 }
 
 @keyframes fadeIn {

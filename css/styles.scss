@@ -264,7 +264,7 @@ body {
 
   .product-image {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
   }
 
@@ -304,6 +304,49 @@ body {
         font-size: 1.2rem;
       }
     }
+  }
+}
+
+.product-images-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+
+  .product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .product-image.active {
+    opacity: 1;
+  }
+
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    z-index: 2;
+  }
+
+  .prev-btn {
+    left: 10px;
+  }
+  .next-btn {
+    right: 10px;
   }
 }
 
