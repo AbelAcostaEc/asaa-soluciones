@@ -76,8 +76,8 @@ body {
 }
 .split-section .section-content .section-subtitle {
   font-size: 1.2rem;
-  margin-bottom: 30px;
   max-width: 80%;
+  margin: 0 auto 30px auto;
 }
 @media (max-width: 768px) {
   .split-section .section-content .section-subtitle {
@@ -102,7 +102,7 @@ body {
 
 .product-section {
   display: none;
-  padding: 40px 20px;
+  padding: 20px 20px;
   min-height: 100vh;
 }
 .product-section.tech-products {
@@ -113,6 +113,7 @@ body {
 }
 .product-section .section-header {
   text-align: center;
+  margin-top: 10px;
   margin-bottom: 40px;
 }
 .product-section .section-header.tech-header {
@@ -122,9 +123,6 @@ body {
   color: #ff9cd7;
 }
 .product-section .back-btn {
-  position: absolute;
-  top: 20px;
-  left: 20px;
   background: none;
   border: none;
   font-size: 1.5rem;
@@ -141,7 +139,7 @@ body {
   display: flex;
   justify-content: end;
   position: sticky;
-  top: 20px;
+  top: 10px;
   z-index: 10000;
 }
 .product-section .other-section-btn {
@@ -322,4 +320,27 @@ body {
 
 .hidden-section {
   display: none;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #2c77f4;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-top-btn.show {
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=styles.css.map */
